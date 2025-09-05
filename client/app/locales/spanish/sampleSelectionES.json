@@ -1,0 +1,13 @@
+{
+    "SampleType": "Tipo de Muestreo",
+    "SamplePageSubtitle": "¿Realizarás el muestreo solo o en grupo?",
+    "SoloSampling": "Muestreo en Solitario",
+    "StartSample": "Comenzar muestreo",
+    "GroupSampling": "Muestreo en Grupo",
+    "StartGroup": "Comenzar muestreo en grupo",
+    "JoinGroup": "Unirse a un grupo",
+    "JoinGroupText": "Agrega el ID de muestra a continuación para unirte a tu grupo",
+    "SampleID": "ID de Muestra",
+    "JoinSample": "Unirse a la muestra",
+    "GroupSubText": "¡Aquí está tu identificador de muestra, haz clic en el botón de abajo para copiarlo y compartirlo!"
+}

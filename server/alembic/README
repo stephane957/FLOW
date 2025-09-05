@@ -1,0 +1,49 @@
+### Alembic Configuration
+
+This project uses Alembic for database migrations. Apply migrations to your database only after schema changes, like modifying tables or columns. 
+
+⚠ *Regular data edits should be managed through application logic, not migrations* ⚠
+
+### Environment Setup
+
+Before running migrations, ensure your environment variables are set up correctly for both development and production environments.
+
+### Set Database URL
+
+Update the `sqlalchemy.url` in the `alembic.ini` file to point to your database. This is crucial for Alembic to connect to the correct database instance.
+
+Example configuration in `alembic.ini`:
+```
+sqlalchemy.url = driver://username:password@host:port/dbname
+```
+Replace the URL with your actual database connection string. For example, for a PostgreSQL database, it might look like:
+```
+sqlalchemy.url = postgresql://user:password@localhost/mydatabase
+
+```
+### Generating Migration Scripts
+
+After setting up your environment variables, generate Alembic migration scripts based on changes to your models.
+```bash
+alembic revision --autogenerate -m "Description of changes"
+```
+
+### Applying Migrations
+
+To apply migrations to your database, execute the following command:
+```bash
+alembic upgrade head
+```
+This will update your database schema to match the latest migration.
+
+### Rollback Migrations
+
+If you need to rollback a migration due to issues or errors, you can use the following command to undo the last migration:
+```bash
+alembic downgrade -1
+```
+This command will revert the last applied migration, moving your database schema to the previous state.
+
+### Additional Notes:
+
+- Ensure that your `alembic.ini` file is not tracked in version control if it contains sensitive information like database credentials.

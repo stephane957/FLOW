@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-ifdyzcahprc4d5l0.us.auth0.com"
+        }
+      ],
+      "expo-localization"
+    ],
+    "name": "FLOW",
+    "slug": "flow_rn",
+    "android": {
+      "package": "com.forlivingoceanswater",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCVW0_qwxy4pM1bmGHwywyjH0CohMowK4s"
+        }
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "versionCode": 2
+    },
+    "ios": {
+      "bundleIdentifier": "com.flow"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}

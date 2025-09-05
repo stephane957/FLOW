@@ -1,0 +1,82 @@
+{
+  "thankYou": "Thank you for your responses.",
+  "nextSection": "Next",
+  "previousSection": "Previous",
+  "completeQuestionnaire": "Complete",
+  "selectOptionPlaceholder": "Choose an option",
+  "distanceInKmPlaceholder": "Indicate in km",
+  "sections": [
+    {
+      "title": "Site Cleaning",
+      "questions": [
+        {
+          "text": "Has a site cleanup been carried out in the 15 days preceding the sampling?",
+          "question_id":"recent_cleaning",
+          "answers": ["Yes", "No"],
+          "answer_type": "binary"
+        },
+        {
+          "text": "How often is your site cleaned?",
+          "question_id":"cleaning_frequency",
+          "answers": ["No cleaning", "Rarely", "Occasionally", "Regularly", "Daily", "Do not know"],
+          "answer_type": "dropdown"
+        },
+        {
+          "text": "What method is used (manual or mechanical)?",
+          "question_id":"cleaning_method",
+          "answers": ["Manual", "Mechanical"],
+          "answer_type": "binary"
+        },
+        {
+          "text": "Who is in charge of cleaning?",
+          "question_id":"cleaning_responsibility",
+          "answers": ["Municipality", "Association", "Private organization", "Individual", "Do not know"],
+          "answer_type": "dropdown"
+        },
+        {
+          "text": "Is there a tide bin on your site?",
+          "question_id":"tide_gauge_presence",
+          "answers": ["Yes", "No"],
+          "answer_type": "binary"
+        }
+      ]
+    },
+    {
+      "title": "Particular Weather Events",
+      "questions": [
+        {
+          "text": "Have there been any recent particular weather events?",
+          "answers": ["Yes", "No"],
+          "answer_type": "binary",
+          "dependency_trigger": "Yes"
+        },
+        {
+          "text": "Which ones?",
+          "answers": ["Flood", "Heavy rains", "Storm", "Hurricane", "Other", "Do not know"],
+          "answer_type": "dropdown",
+          "question_id":"recent_meteo_events",
+          "depends_on": 0
+        },
+        {
+          "text": "What is your interpretation of it (more or less waste, etc.)?",
+          "answers": [],
+          "answer_type": "textbox",
+          "question_id":"meteo_interpretation",
+          "depends_on": 0
+        }
+      ]
+    },
+    {
+      "title": "Additional Comments",
+      "questions": [
+        {
+          "text": "",
+          "answers": [],
+          "answer_type": "textbox",
+          "placeholder": "Any additional comments?",
+          "question_id":"additional_comments"
+        }
+      ]
+    }
+  ]
+}

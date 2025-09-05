@@ -1,0 +1,13 @@
+{
+    "SampleType": "Sampling Type",
+    "SamplePageSubtitle":"Will you be completing the sampling alone or in a group?",
+    "SoloSampling": "Solo Sampling",
+    "StartSample": "Start sample",
+    "GroupSampling":"Group Sampling",
+    "StartGroup":"Start group sample",
+    "JoinGroup":"Join a group",
+    "JoinGroupText":"Add the sample ID below to join your group",
+    "SampleID":"Sample id",
+    "JoinSample":"Join sample",
+    "GroupSubText":"Here is your sample identifier, click the button below to copy and share it!"
+}

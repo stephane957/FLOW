@@ -1,0 +1,82 @@
+{
+  "thankYou": "Gracias por sus respuestas.",
+  "nextSection": "Siguiente",
+  "previousSection": "Anterior",
+  "completeQuestionnaire": "Completar",
+  "selectOptionPlaceholder": "Seleccione una opción",
+  "distanceInKmPlaceholder": "Indicar en km",
+  "sections": [
+    {
+      "title": "Limpieza del sitio",
+      "questions": [
+        {
+          "text": "¿Se ha realizado una limpieza del sitio en los 15 días anteriores al muestreo?",
+          "question_id":"recent_cleaning",
+          "answers": ["Sí", "No"],
+          "answer_type": "binary"
+        },
+        {
+          "text": "¿Con qué frecuencia se limpia su sitio?",
+          "question_id":"cleaning_frequency",
+          "answers": ["Sin limpieza", "Raramente", "Ocasionalmente", "Regularmente", "Diariamente", "No sabe"],
+          "answer_type": "dropdown"
+        },
+        {
+          "text": "¿Qué método se utiliza (manual o mecánico)?",
+          "question_id":"cleaning_method",
+          "answers": ["Manual", "Mecánico"],
+          "answer_type": "binary"
+        },
+        {
+          "text": "¿Quién está a cargo de la limpieza?",
+          "question_id":"cleaning_responsibility",
+          "answers": ["Municipalidad", "Asociación", "Organismo privado", "Particular", "No sabe"],
+          "answer_type": "dropdown"
+        },
+        {
+          "text": "¿Hay un contenedor para residuos marinos en su sitio?",
+          "answers": ["Sí", "No"],
+          "answer_type": "binary",
+          "question_id":"tide_gauge_presence"
+        }
+      ]
+    },
+    {
+      "title": "Eventos meteorológicos particulares",
+      "questions": [
+        {
+          "text": "¿Ha habido recientemente eventos meteorológicos particulares?",
+          "answers": ["Sí", "No"],
+          "answer_type": "binary",
+          "dependency_trigger": "Sí"
+        },
+        {
+          "text": "¿Cuáles?",
+          "answers": ["Inundación", "Fuertes lluvias", "Tormenta", "Huracán", "Otro", "No sabe"],
+          "answer_type": "dropdown",
+          "depends_on": 0,
+          "question_id":"recent_meteo_events"
+        },
+        {
+          "text": "¿Qué interpretación le da (más o menos residuos,...)?",
+          "answers": [],
+          "answer_type": "textbox",
+          "depends_on": 0,
+          "question_id":"meteo_interpretation"
+        }
+      ]
+    },
+    {
+      "title": "Comentarios adicionales",
+      "questions": [
+        {
+          "text": "",
+          "answers": [],
+          "answer_type":"textbox",
+          "question_id":"additional_comments",
+          "placeholder":"¿Algún comentario adicional?"
+        }
+      ]
+    }
+  ]
+}

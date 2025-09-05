@@ -1,0 +1,26 @@
+# Sample Data Input Template
+# -------------------------------------------------------------------------------------
+# Instructions:
+# - This file serves as a template for inputting sample data. Please modify the 
+#   fields below according to your data collection. Each column represents a 
+#   different attribute, and each row under the headers represents a unique 
+#   data point.
+#       - CODE: Unique identifier for the data point.
+#       - long_transect, Poids (en kg), Volume (en L): Enter the numerical values 
+#         corresponding to each data point.
+#       - # Macro, # Meso, # Micro: Enter the count for each category.
+#       - Latitude, Longitude: Enter the geographical coordinates for each data point.
+#
+# --> After modifying, REMOVE THIS HEADER, save the file as 'sample_data.txt', and 
+#     ensure only your data rows are present in the final file.
+#
+# -------------------------------------------------------------------------------------
+CODE,C1,C2,C3,C4
+long_transect,t1,t2,t3,t4
+Poids (en kg),p1,p2,p3,p4
+Volume (en L),v1,v2,v3,v4
+# Macro,m1,m2,m3,m4
+# Meso,me1,me2,me3,me4
+# Micro,mi1,mi2,mi3,mi4
+Latitude,L1,L2,L3,L4
+Longitude,Lo1,Lo2,Lo3,Lo4

@@ -1,0 +1,83 @@
+{
+    "thankYou": "Merci pour vos réponses.",
+    "nextSection": "Suivant",
+    "previousSection": "Précédent",
+    "completeQuestionnaire": "Compléter",
+    "selectOptionPlaceholder": "Choisissez une option",
+    "distanceInKmPlaceholder": "Indiquer en km",
+    "sections": [
+      {
+        "title": "Nettoyage du site",
+        "questions": [
+          {
+            "text": "Un nettoyage du site a-t-il été effectué dans les 15 jours précédents le prélèvement ?",
+            "question_id":"recent_cleaning",
+            "answers": ["Oui", "Non"],
+            "answer_type": "binary"
+          },
+          {
+            "text": "À quelle fréquence votre site est-il nettoyé ?",
+            "question_id":"cleaning_frequency",
+            "answers": ["Pas de nettoyage", "Rarement", "Occasionnellement", "Régulièrement", "Journalier", "Ne sait pas"],
+            "answer_type": "dropdown"
+          },
+          {
+            "text": "Quelle méthode est utilisée (manuelle ou mécanique) ?",
+            "question_id":"cleaning_method",
+            "answers": ["Manuelle", "Mécanique"],
+            "answer_type": "binary"
+          },
+          {
+            "text": "Qui est en charge du nettoyage ?",
+            "question_id":"cleaning_responsibility",
+            "answers": ["Municipalité", "Association", "Organisme privé", "Particulier", "Ne sait pas"],
+            "answer_type": "dropdown"
+          },
+          {
+            "text": "Y a-t-il un bac à marée sur votre site ?",
+            "answers": ["Oui", "Non"],
+            "answer_type": "binary",
+            "question_id":"tide_gauge_presence"
+          }
+        ]
+      },
+      {
+        "title": "Événements météorologiques particuliers",
+        "questions": [
+          {
+            "text": "Y a-t-il eu récemment des événements météorologiques particuliers ?",
+            "answers": ["Oui", "Non"],
+            "answer_type": "binary",
+            "dependency_trigger": "Oui"
+          },
+          {
+            "text": "Lesquels ?",
+            "answers": ["Crue", "Fortes pluies", "Tempête", "Ouragan", "Autre", "Ne sait pas"],
+            "answer_type": "dropdown",
+            "depends_on": 0,
+            "question_id":"recent_meteo_events"
+          },
+          {
+            "text": "Quelle interprétation en faites-vous (plus ou moins de déchets,...) ?",
+            "answers": [],
+            "answer_type": "textbox",
+            "depends_on": 0,
+            "question_id":"meteo_interpretation"
+          }
+        ]
+      },
+      {
+        "title": "Commentaires supplémentaires",
+        "questions": [
+          {
+            "text": "",
+            "answers": [],
+            "answer_type": "textbox",
+            "question_id":"additional_comments",
+            "placeholder": "Avez-vous des commentaires supplémentaires?"
+          }
+        ]
+      }
+    ]
+  }
+  

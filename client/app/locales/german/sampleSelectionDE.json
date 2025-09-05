@@ -1,0 +1,13 @@
+{
+    "SampleType": "Stichprobenart",
+    "SamplePageSubtitle": "Wirst du die Stichprobe allein oder in einer Gruppe durchführen?",
+    "SoloSampling": "Einzelstichprobe",
+    "StartSample": "Stichprobe starten",
+    "GroupSampling": "Gruppenstichprobe",
+    "StartGroup": "Gruppenstichprobe starten",
+    "JoinGroup": "Einer Gruppe beitreten",
+    "JoinGroupText": "Füge unten die Stichproben-ID hinzu, um deiner Gruppe beizutreten",
+    "SampleID": "Stichproben-ID",
+    "JoinSample": "Stichprobe beitreten",
+    "GroupSubText": "Hier ist Ihre Stichprobenkennung. Klicken Sie auf die Schaltfläche unten, um sie zu kopieren und zu teilen!"
+}

@@ -1,0 +1,13 @@
+{
+    "SampleType": "Type d'échantillonnage",
+    "SamplePageSubtitle": "Allez-vous effectuer l'échantillonnage seul ou en groupe ?",
+    "SoloSampling": "Échantillonnage en solo",
+    "StartSample": "Commencer l'échantillon",
+    "GroupSampling": "Échantillonnage en groupe",
+    "StartGroup": "Commencer en groupe",
+    "JoinGroup": "Rejoindre un groupe",
+    "JoinGroupText": "Ajoutez l'identifiant de l'échantillon pour rejoindre votre groupe",
+    "SampleID": "Identifiant de l'échantillon",
+    "JoinSample": "Rejoindre l'échantillon",
+    "GroupSubText": "Voici votre identifiant d'échantillon, cliquez sur le bouton ci-dessous pour le copier et le partager !"
+}
